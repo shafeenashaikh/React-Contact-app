@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import User from '../images/User.png';
+
 
 const ContactCard = (props) => {
 
     const{id, name, email} = props.contact;
     return(
         <div className="item">
-            {/* <img className="ui avatar image" src={User} alt="user"/> */}
+            <img className="ui avatar image" src="/img/1.png"  alt="user" />
         <div className="content">
             <Link to={{pathname:`contact/${id}`, state:{contact: props.contact}}}>
                 <div className="header">{name}</div>
